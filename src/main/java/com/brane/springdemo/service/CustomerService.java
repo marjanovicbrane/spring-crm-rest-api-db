@@ -1,8 +1,8 @@
-package com.luv2code.springdemo.service;
+package com.brane.springdemo.service;
 
 import java.util.List;
 
-import com.luv2code.springdemo.entity.Customer;
+import com.brane.springdemo.entity.Customer;
 
 //we created interface with CRUD methods for customer SERVICE to delegate calls to the DAO LAYER
 public interface CustomerService {
