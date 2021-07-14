@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.brane.springdemo.entity.Customer;
 import com.brane.springdemo.service.CustomerService;
+import com.luv2code.springdemo.rest.CustomerNotFoundException;
 
 //THIS IS CONTROLLER LAYER
 @RestController
@@ -46,11 +47,16 @@ public class CustomerRestController {
 		@GetMapping("/customers/{customerId}")
 		public Customer getCustomer(@PathVariable int customerId) {
 			
+			//if customer is null, Jackson will return empty JSON body
 			Customer customer = customerService.getCustomer(customerId);
+			
+			//and we want to do this, if customer is null we did like to throw an CustomerNotFoundException exception
+			if (customer == null) {
+
+				throw new CustomerNotFoundException("Customer id not found - " + customerId);
+			}
 			
 			return customer;
 		}
 		
-		
-
 }
