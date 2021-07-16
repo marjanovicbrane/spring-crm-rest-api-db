@@ -50,10 +50,8 @@ public class CustomerDAOImpl implements CustomerDAO {
 		
 	}
 
-	//sada dodajemo novi metod koji cmeo koristiti za getovanje 1 customera i za brisanje customera na osnovuid-ja
-	//za update nam ne treba id jer kostisimo metod saveorupdate()
-	//a da bismo znali kojeg customera
-	//moramo ga uzeti iz baze na osnovu njegovog id-ja
+
+	
 	@Override
 	public Customer getCustomer(int theId) {
 
