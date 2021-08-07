@@ -1,4 +1,4 @@
-I made CRM REST client app that communicates with CRM REST API, two separated web applications which communicates together on the server.GitHub link of the CRM REST API is: https://github.com/marjanovicbrane/spring-crm-rest-api-db
+I made CRM REST client app that communicates with CRM REST API, two separated web applications which communicates together on the server.GitHub link of the CRM REST CLIENT is: https://github.com/marjanovicbrane/spring-crm-web-app-rest-client
 
 
 On the client side we can show list customer objects retrieved from the database.
